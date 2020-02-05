@@ -64,7 +64,7 @@ while True:
             print("Suma wektora AB i DC to: ",s)
         #    plt.plot(0,0, [suma, suma1], color="green")
         #    plt.show()
-            continue
+            
 
         elif(f == 2):
             roznica = a-c
