@@ -1,5 +1,3 @@
-# import numpy as np
-# import matplotlib.plot as plt
 import math
 
 while True:
@@ -15,25 +13,15 @@ while True:
 
 
 
-# punkt_zero = [0,0]
-
         def iloczyn():
             ktora = input("Który wektor ma być mnożony: a - AB czy b - DC ?")
             i = float(input("o ile pomnożony ma być wktor: "))
             if (ktora == "a" or ktora == "A"):
-                iloczynA = i*a
-                iloczynA1 = i*b
-                suma_iloczynowA = [iloczynA, iloczynA1]
+                suma_iloczynowA = [i*a, i*b]
                 print(suma_iloczynowA)
-            #    plt.plot(0,0, [iloczynA, iloczynA1], color="red")
-            #    plt.show()
             elif (ktora == "b" or ktora == "B"):
-                iloczynB = i*c
-                iloczynB1 = i*d
-                suma_iloczynowB = [iloczynB, iloczynB1]
+                suma_iloczynowB = [i*c, i*d]
                 print(suma_iloczynowB)
-                plt.plot(0,0, [iloczynB, iloczynB1], color="blue")
-                plt.show()
 
         def odlegloscWektora():
             jakiWektor = input("Dla jakiego wektora chcesz obliczyć dłuość? Wybierz: 1 - AB, 2 - DC")
@@ -58,22 +46,12 @@ while True:
 
 
         if(f == 1):
-            suma = a+c
-            suma1 = b+d
-            s = [suma, suma1]
+            s = [a+c, b+d]
             print("Suma wektora AB i DC to: ",s)
-        #    plt.plot(0,0, [suma, suma1], color="green")
-        #    plt.show()
-            
 
         elif(f == 2):
-            roznica = a-c
-            roznica1 = b-d
-            r = [roznica, roznica1]
+            r = [a-c, b-d]
             print("Różnica wektora AB i DC to: ",r)
-        #    plt.plot(0,0, [roznica, roznica1], color="blue")
-        #    plt.show()
-
 
         elif(f == 3):
             iloczyn()
